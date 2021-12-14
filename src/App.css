@@ -1,0 +1,32 @@
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  font-weight: bolder !important;
+}
+
+.App {
+  text-align: center;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+.item-name {
+  font-size: 18px;
+}
+
+.img-fluid {
+  height: 200px !important;
+}
+
+.footer {
+  background-color: blue;
+  color: white;
+}
+
+
+
+/*  */
