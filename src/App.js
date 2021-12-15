@@ -17,7 +17,9 @@ function App() {
           <Navigation />
           <Router>
             <Switch>
-              <Route path="/" component={Items} exact />
+              <Route path="/" exact>
+                <Items />
+              </Route>
               <Route path="/additem" component={Additem} exact />
               <Route path="/cart" component={Cart} exact />
             </Switch>
