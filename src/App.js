@@ -17,15 +17,24 @@ function App() {
           <Navigation />
           <Router>
             <Switch>
-              <Route path="/" component={Items} exact />
-              <Route path="/additem" component={Additem} />
-              <Route path="/cart" component={Cart} />
+              <Route path="/" exact>
+                <Items />
+              </Route>
+              <Route path="/additem" >
+                <Additem />
+              </Route>
+              <Route path="/cart">
+                <Cart />
+              </Route>
             </Switch>
           </Router>
           <Footer />
         </PersistGate>
       </Provider>
     </div>
+    // <Route path="/" component={Items} exact />
+    // <Route path="/additem" component={Additem} />
+    // <Route path="/cart" component={Cart} />
   );
 }
 
