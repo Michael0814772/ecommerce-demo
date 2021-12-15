@@ -27,7 +27,7 @@ function Items() {
         )
     })
     return (
-        <Container>
+        <Container className='mb-5'>
             <Form.Control 
             type="text" 
             placeholder="Search Items" 

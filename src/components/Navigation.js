@@ -11,7 +11,7 @@ function Navigation() {
         <div>
             <Navbar bg="primary" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+                    <Navbar.Brand href="/">Navbar</Navbar.Brand>
                     <Nav className="nav mx-auto">
                         <Nav.Link href="/">Home</Nav.Link>
                         <Nav.Link href="/additem">Add Item</Nav.Link>

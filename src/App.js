@@ -1,5 +1,5 @@
 import { Provider } from 'react-redux';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/integration/react';
 import './App.css';
 import Additem from './components/Additem';
@@ -15,13 +15,13 @@ function App() {
       <Provider store={store}>
         <PersistGate persistor={persistor}>
           <Navigation />
-          <BrowserRouter>
+          <Router>
             <Switch>
               <Route path="/" component={Items} exact />
               <Route path="/additem" component={Additem} exact />
               <Route path="/cart" component={Cart} exact />
             </Switch>
-          </BrowserRouter>
+          </Router>
           <Footer />
         </PersistGate>
       </Provider>
